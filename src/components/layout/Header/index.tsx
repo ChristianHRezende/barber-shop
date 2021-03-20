@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
     <StyledHeader>
       <StyledHeaderContainer>
         <StyledHeaderImageContainer>
-          <IconHeaderImage src={imageBarberIcon} alt="Barber Icon" />
+          <IconHeaderImage src={imageBarberIcon} alt="Barber Icon" href={'/'} />
         </StyledHeaderImageContainer>
         <Nav navItemList={navItemList} />
       </StyledHeaderContainer>
