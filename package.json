@@ -25,6 +25,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
+    "husky": "^5.1.3",
     "prettier": "^2.2.1"
   },
   "scripts": {
@@ -38,6 +39,12 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit": "eslint .",
+      "pre-push": "npm test"
+    }
   },
   "browserslist": {
     "production": [
