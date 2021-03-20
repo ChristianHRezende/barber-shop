@@ -1,4 +1,4 @@
-module.exports = {
+ module.exports = {
     "env": {
         "browser": true,
         "es2021": true
@@ -22,11 +22,15 @@ module.exports = {
         "react",
         "@typescript-eslint",
         "react-hooks",
-        "prettier"
+        "prettier",
+        "import",
     ],
     "rules": {
         "prettier/prettier": "error",
-        "react-hooks/rules-of-hooks": "error",
+        "react/require-default-props": 0,
+        "react/jsx-one-expression-per-line": 0,
+        "arrow-body-style": 0,
+        "import/no-unresolved":  "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
         "import/prefer-default-export": "off",
@@ -38,10 +42,20 @@ module.exports = {
             "tsx": "never"
             }
         ]
+        
     },
     "settings": {
+        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "import/parsers": {
+          "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
         "import/resolver": {
-          "typescript": {}
+          "typescript": {
+            "directory": "./tsconfig.json",
+          },
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
         }
       }
-};
+}
