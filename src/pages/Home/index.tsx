@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
-import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Footer from '../../components/layout/Footer';
+import Header from '../../components/layout/Header';
 import barberIcon from '../../assets/img/logo.png';
+import Main from '../../components/layout/Main';
 
 interface HomePageProps {
   children?: ReactNode;
@@ -25,7 +26,7 @@ const HomePage: React.FC<HomePageProps> = () => {
   return (
     <div>
       <Header image={barberIcon} options={headerOptions} />
-      <main>
+      <Main>
         <section>
           <img
             className="banner"
@@ -47,7 +48,7 @@ const HomePage: React.FC<HomePageProps> = () => {
             </div>
           </div>
         </section>
-      </main>
+      </Main>
       <Footer />
     </div>
   );
