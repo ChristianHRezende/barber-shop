@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import Header from './components/Header';
 
 import barberIcon from './assets/img/logo.png';
+import Footer from './components/Footer';
 
 interface AppProps {
   children?: ReactNode;
@@ -48,15 +49,7 @@ const App: React.FC<AppProps> = () => {
           </div>
         </section>
       </main>
-      <footer>
-        <div className="footer-container">
-          <div className="footer-detail-container">
-            <p>Rua ascascascacaca, n° 500.</p>
-            <p>São Paulo - SP.</p>
-            <p>©Copyright</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
