@@ -20,3 +20,7 @@ export const StyledFloatLeftImage = styled(StyledImage)`
   margin: 30px 15px 30px 30px;
   width: 7em;
 `;
+
+export const StyledIconHairImage = styled(StyledImage)`
+  width: 7em;
+`;

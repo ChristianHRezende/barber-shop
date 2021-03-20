@@ -11,14 +11,14 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
       <Main>
         <Banner />
         <AboutUs />
       </Main>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 

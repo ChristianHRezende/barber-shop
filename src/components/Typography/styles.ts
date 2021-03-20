@@ -6,10 +6,14 @@ export const StyledTitle = styled.h1`
   font-style: bold;
   line-height: 2.5em;
   text-align: center;
-  text-decoration: none;
 `;
 
-export const StyledSubTitle = styled.h2``;
+export const StyledSubTitle = styled.h2`
+  color: brown;
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+`;
 
 export const StyledParagraphy = styled.p`
   line-height: 2em;

@@ -3,6 +3,7 @@ import {
   StyledBannerImage,
   StyledIconHeaderImage,
   StyledFloatLeftImage,
+  StyledIconHairImage,
 } from './styles';
 
 interface ImageProps {
@@ -29,4 +30,8 @@ export const BannerImage: React.FC<ImageProps> = ({ src, alt }) => {
 
 export const FloatLeftImage: React.FC<ImageProps> = ({ src, alt }) => {
   return <StyledFloatLeftImage src={src} alt={alt} />;
+};
+
+export const IconHairImage: React.FC<ImageProps> = ({ src, alt }) => {
+  return <StyledIconHairImage src={src} alt={alt} />;
 };
