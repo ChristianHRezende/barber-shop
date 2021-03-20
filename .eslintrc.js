@@ -6,7 +6,7 @@
     "extends": [
       "plugin:react/recommended",
       "plugin:@typescript-eslint/recommended",
-      "plugin:prettier/recommended"
+      "plugin:prettier/recommended",
 
     ],
     "parser": "@typescript-eslint/parser",
@@ -23,11 +23,14 @@
         "react-hooks",
         "prettier",
         "import",
+        "better-styled-components"
     ],
     "rules": {
       "prettier/prettier": "error",
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
+      "better-styled-components/sort-declarations-alphabetically": 2,
+      "react/prop-types": "off",
       "react/jsx-filename-extension": [
         1,
         {
