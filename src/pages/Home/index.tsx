@@ -11,23 +11,9 @@ interface HomePageProps {
 }
 
 const HomePage: React.FC<HomePageProps> = () => {
-  const headerOptions = [
-    {
-      value: 'Home',
-      href: '#',
-    },
-    {
-      value: 'About us',
-      href: '#',
-    },
-    {
-      value: 'Contact Us',
-      href: '#',
-    },
-  ];
   return (
     <div>
-      <Header image={barberIcon} options={headerOptions} />
+      <Header />
       <Main>
         <Banner />
         <AboutUs />

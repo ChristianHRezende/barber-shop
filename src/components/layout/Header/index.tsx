@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react';
 import { IconHeaderImage } from '../../Image';
 import Nav from '../Nav';
-import { NavItemType } from '../NavItem/types';
+import imageBarberIcon from '../../../assets/img/logo.png';
+
 import {
   StyledHeader,
   StyledHeaderContainer,
@@ -10,18 +11,31 @@ import {
 
 interface HeaderProps {
   children?: ReactNode;
-  options: Array<NavItemType>;
-  image: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ image, options }) => {
+const Header: React.FC<HeaderProps> = ({}) => {
+  const navItemList = [
+    {
+      value: 'Home',
+      href: '/',
+    },
+    {
+      value: 'Products',
+      href: '/products',
+    },
+    {
+      value: 'Contact Us',
+      href: '#',
+    },
+  ];
+
   return (
     <StyledHeader>
       <StyledHeaderContainer>
         <StyledHeaderImageContainer>
-          <IconHeaderImage src={image} alt="Barber Icon" />
+          <IconHeaderImage src={imageBarberIcon} alt="Barber Icon" />
         </StyledHeaderImageContainer>
-        <Nav navItemList={options} />
+        <Nav navItemList={navItemList} />
       </StyledHeaderContainer>
     </StyledHeader>
   );
