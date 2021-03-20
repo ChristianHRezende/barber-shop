@@ -12,6 +12,7 @@ export const StyledContainer = styled.div`
   justify-content: center;
   margin: 20px 0;
   padding: 50px;
+  transition: 1s all;
   width: auto;
   &:hover {
     cursor: pointer;

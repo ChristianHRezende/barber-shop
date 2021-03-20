@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledImage = styled.img``;
 
 export const StyledIconHeaderImage = styled(StyledImage)`
+  transition: 1s all;
   width: 100px;
   &:hover {
     cursor: pointer;
