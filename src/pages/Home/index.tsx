@@ -3,6 +3,8 @@ import Footer from '../../components/layout/Footer';
 import Header from '../../components/layout/Header';
 import barberIcon from '../../assets/img/logo.png';
 import Main from '../../components/layout/Main';
+import Banner from './components/Banner';
+import AboutUs from './components/AboutUs';
 
 interface HomePageProps {
   children?: ReactNode;
@@ -27,27 +29,8 @@ const HomePage: React.FC<HomePageProps> = () => {
     <div>
       <Header image={barberIcon} options={headerOptions} />
       <Main>
-        <section>
-          <img
-            className="banner"
-            src="./assets/img/banner.jpg"
-            alt="Barber shop image"
-          />
-        </section>
-
-        <section>
-          <h1 className="section-title">Photos</h1>
-          <div className="section-cards-container">
-            <div className="photo-card">
-              <img
-                className="banner"
-                src="./assets/img/barber_about.jpg"
-                alt="chair"
-              />
-              <p>We are a new custom barber shop.</p>
-            </div>
-          </div>
-        </section>
+        <Banner />
+        <AboutUs />
       </Main>
       <Footer />
     </div>

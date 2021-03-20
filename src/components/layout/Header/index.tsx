@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
+import { IconHeaderImage } from '../../Image';
 import Nav from '../Nav';
 import { NavItemType } from '../NavItem/types';
 import {
   StyledHeader,
   StyledHeaderContainer,
   StyledHeaderImageContainer,
-  StyledImageHeader,
 } from './styles';
 
 interface HeaderProps {
@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ image, options }) => {
     <StyledHeader>
       <StyledHeaderContainer>
         <StyledHeaderImageContainer>
-          <StyledImageHeader src={image} alt="Barber Icon" />
+          <IconHeaderImage src={image} alt="Barber Icon" />
         </StyledHeaderImageContainer>
         <Nav navItemList={options} />
       </StyledHeaderContainer>

@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledFooter = styled.footer`
-  width: 100vw;
+  margin-top: 300px;
+  width: 100%;
 `;
 
 export const StyledFooterContainer = styled.div`

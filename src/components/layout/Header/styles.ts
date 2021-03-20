@@ -14,6 +14,3 @@ export const StyledHeaderContainer = styled.div`
 export const StyledHeaderImageContainer = styled.h1`
   display: inline;
 `;
-export const StyledImageHeader = styled.img`
-  width: 100px;
-`;
