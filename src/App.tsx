@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-function App() {
+interface AppProps {
+  children?: ReactNode;
+}
+
+const App: React.FC<AppProps> = () => {
   return (
     <div>
-      <header></header>
+      <header>
+        <p>Hello</p>
+      </header>
     </div>
   );
-}
+};
 
 export default App;
